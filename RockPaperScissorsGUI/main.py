@@ -76,7 +76,7 @@ class RockPaperScissorsApp:
     self.root = root
     self.root.title("Rock/Paper/Scissors Game")
     self.root.eval('tk::PlaceWindow . center')
-    self.root.geometry("600x300")
+    self.root.geometry("600x400")
     self.fontSettings = ("Arial", 16, "bold")
 
     # Scores
@@ -98,13 +98,13 @@ class RockPaperScissorsApp:
     lblTitle.grid(row=0, column=2, padx=20, pady=20)
 
     # Row 1 - Rock/Paper/Scissors Buttons
-    btnRock = tk.Button(self.root, image=self.imgRock, font=self.fontSettings, command=lambda: self.playGame(ROCK), width=50)
+    btnRock = tk.Button(self.root, image=self.imgRock, font=self.fontSettings, command=lambda: self.playGame(ROCK), width=75)
     btnRock.grid(row= 1, column=0, padx=10, pady=10)
 
-    btnPaper = tk.Button(self.root, image=self.imgPaper, font=self.fontSettings, command=lambda: self.playGame(PAPER), width=50)
+    btnPaper = tk.Button(self.root, image=self.imgPaper, font=self.fontSettings, command=lambda: self.playGame(PAPER), width=75)
     btnPaper.grid(row= 1, column=2, padx=10, pady=10)
 
-    btnScissors = tk.Button(self.root, image=self.imgScissors, font=self.fontSettings, command=lambda: self.playGame(SCISSORS), width=50)
+    btnScissors = tk.Button(self.root, image=self.imgScissors, font=self.fontSettings, command=lambda: self.playGame(SCISSORS), width=75)
     btnScissors.grid(row= 1, column=4, padx=10, pady=10)
 
     # Score Info
